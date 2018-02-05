@@ -10,8 +10,9 @@
 		08DD20812028D25600748D99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD20802028D25600748D99 /* AppDelegate.swift */; };
 		08DD20832028D25600748D99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD20822028D25600748D99 /* ViewController.swift */; };
 		08DD20862028D25600748D99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DD20842028D25600748D99 /* Main.storyboard */; };
-		08DD20882028D25600748D99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08DD20872028D25600748D99 /* Assets.xcassets */; };
 		08DD208B2028D25600748D99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DD20892028D25600748D99 /* LaunchScreen.storyboard */; };
+		08DD20932028D39500748D99 /* TropicanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD20922028D39500748D99 /* TropicanaViewController.swift */; };
+		08DD20972028D3D300748D99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08DD20962028D3D300748D99 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +20,10 @@
 		08DD20802028D25600748D99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08DD20822028D25600748D99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08DD20852028D25600748D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		08DD20872028D25600748D99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08DD208A2028D25600748D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08DD208C2028D25600748D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08DD20922028D39500748D99 /* TropicanaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TropicanaViewController.swift; sourceTree = "<group>"; };
+		08DD20962028D3D300748D99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +56,11 @@
 		08DD207F2028D25600748D99 /* MAPD724-W2018-Slot-Machine */ = {
 			isa = PBXGroup;
 			children = (
+				08DD20962028D3D300748D99 /* Assets.xcassets */,
+				08DD20922028D39500748D99 /* TropicanaViewController.swift */,
 				08DD20802028D25600748D99 /* AppDelegate.swift */,
 				08DD20822028D25600748D99 /* ViewController.swift */,
 				08DD20842028D25600748D99 /* Main.storyboard */,
-				08DD20872028D25600748D99 /* Assets.xcassets */,
 				08DD20892028D25600748D99 /* LaunchScreen.storyboard */,
 				08DD208C2028D25600748D99 /* Info.plist */,
 			);
@@ -124,7 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08DD208B2028D25600748D99 /* LaunchScreen.storyboard in Resources */,
-				08DD20882028D25600748D99 /* Assets.xcassets in Resources */,
+				08DD20972028D3D300748D99 /* Assets.xcassets in Resources */,
 				08DD20862028D25600748D99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +141,7 @@
 			files = (
 				08DD20832028D25600748D99 /* ViewController.swift in Sources */,
 				08DD20812028D25600748D99 /* AppDelegate.swift in Sources */,
+				08DD20932028D39500748D99 /* TropicanaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
