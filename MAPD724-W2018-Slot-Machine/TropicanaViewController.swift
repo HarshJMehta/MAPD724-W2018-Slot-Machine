@@ -90,7 +90,7 @@ class TropicanaViewController: UIViewController, UIPickerViewDelegate, UIPickerV
             let position = Int(arc4random_uniform(3))
             var gameIndex = getRandomFruitFaceIndex()
             switch position {
-            case 0: //Position: FRUIT FRUIT ANY
+            case 0: //Position: ITEM ANY
                 picker1.selectRow(gameIndex, inComponent: 0, animated: true)
                 picker2.selectRow(gameIndex, inComponent: 0, animated: true)
                 
@@ -98,7 +98,7 @@ class TropicanaViewController: UIViewController, UIPickerViewDelegate, UIPickerV
                 
                 gameIndex = getRandomNonRepeatingGamesIndex(indexies: indexes)
                 picker3.selectRow(gameIndex, inComponent: 0, animated: true)
-            case 1: //Position FRUIT ANY FRUIT
+            case 1: //Position Item ANY Item
                 picker1.selectRow(gameIndex, inComponent: 0, animated: true)
                 picker3.selectRow(gameIndex, inComponent: 0, animated: true)
                 
