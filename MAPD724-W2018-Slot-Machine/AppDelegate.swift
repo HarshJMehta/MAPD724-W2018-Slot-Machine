@@ -1,10 +1,7 @@
+//  Assignment 1 - Slot Machine
 //
-//  AppDelegate.swift
-//  MAPD724-W2018-Slot-Machine
-//
-//  Created by Harsh Mehta on 2018-02-05.
-//  Copyright © 2018 Harsh Mehta. All rights reserved.
-//
+//  Harsh Mehta - 300951815
+//  Shivam Shah - 300877523
 
 import UIKit
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		08DD20812028D25600748D99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD20802028D25600748D99 /* AppDelegate.swift */; };
-		08DD20832028D25600748D99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD20822028D25600748D99 /* ViewController.swift */; };
 		08DD20862028D25600748D99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DD20842028D25600748D99 /* Main.storyboard */; };
 		08DD208B2028D25600748D99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08DD20892028D25600748D99 /* LaunchScreen.storyboard */; };
 		08DD20932028D39500748D99 /* TropicanaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD20922028D39500748D99 /* TropicanaViewController.swift */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		08DD207D2028D25600748D99 /* MAPD724-W2018-Slot-Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2018-Slot-Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08DD20802028D25600748D99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		08DD20822028D25600748D99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08DD20852028D25600748D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08DD208A2028D25600748D99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08DD208C2028D25600748D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				08DD20962028D3D300748D99 /* Assets.xcassets */,
 				08DD20922028D39500748D99 /* TropicanaViewController.swift */,
 				08DD20802028D25600748D99 /* AppDelegate.swift */,
-				08DD20822028D25600748D99 /* ViewController.swift */,
 				08DD20842028D25600748D99 /* Main.storyboard */,
 				08DD20892028D25600748D99 /* LaunchScreen.storyboard */,
 				08DD208C2028D25600748D99 /* Info.plist */,
@@ -139,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08DD20832028D25600748D99 /* ViewController.swift in Sources */,
 				08DD20812028D25600748D99 /* AppDelegate.swift in Sources */,
 				08DD20932028D39500748D99 /* TropicanaViewController.swift in Sources */,
 			);
