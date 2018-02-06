@@ -74,7 +74,7 @@ class TropicanaViewController: UIViewController, UIPickerViewDelegate, UIPickerV
                 beginningcount += betM * 10
             }
             
-            let alert = UIAlertController(title: "Winner", message: "You Won the Games", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Winner", message: "You won the Game!", preferredStyle: .alert)
             
             let printSomething = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default) { _ in
                 print("We can run a block of code." )
@@ -87,10 +87,14 @@ class TropicanaViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         case 1:
             
             //2 Position Is Same
+            
             let position = Int(arc4random_uniform(3))
             var gameIndex = getRandomFruitFaceIndex()
             switch position {
-            case 0: //Position: ITEM ANY
+                
+            case 0:
+                
+                //Position: ITEM ANY
                 picker1.selectRow(gameIndex, inComponent: 0, animated: true)
                 picker2.selectRow(gameIndex, inComponent: 0, animated: true)
                 
@@ -98,7 +102,9 @@ class TropicanaViewController: UIViewController, UIPickerViewDelegate, UIPickerV
                 
                 gameIndex = getRandomNonRepeatingGamesIndex(indexies: indexes)
                 picker3.selectRow(gameIndex, inComponent: 0, animated: true)
+                
             case 1: //Position Item ANY Item
+                
                 picker1.selectRow(gameIndex, inComponent: 0, animated: true)
                 picker3.selectRow(gameIndex, inComponent: 0, animated: true)
                 
@@ -106,9 +112,11 @@ class TropicanaViewController: UIViewController, UIPickerViewDelegate, UIPickerV
                 
                 gameIndex = getRandomNonRepeatingGamesIndex(indexies: indexes)
                 picker2.selectRow(gameIndex, inComponent: 0, animated: true)
+                
             case 2:
                 
                 //Position any
+            
                 picker2.selectRow(gameIndex, inComponent: 0, animated: true)
                 picker3.selectRow(gameIndex, inComponent: 0, animated: true)
                 
@@ -116,27 +124,34 @@ class TropicanaViewController: UIViewController, UIPickerViewDelegate, UIPickerV
                 
                 gameIndex = getRandomNonRepeatingGamesIndex(indexies: indexes)
                 picker1.selectRow(gameIndex, inComponent: 0, animated: true)
+                
             default: break
             }
             
             //Winner
+            
             beginningcount += betM
+        
         case 2:
             // 3 of Any
             
             //reel 1
+            
             var gameIndex = getRandomFruitFaceIndex()
             picker1.selectRow(gameIndex, inComponent: 0, animated: true)
             indexes.remove(at: indexes.index(of: gameIndex)!)
+            
             //reel 2
             gameIndex = getRandomNonRepeatingGamesIndex(indexies: indexes)
             picker2.selectRow(gameIndex, inComponent: 0, animated: true)
             indexes.remove(at: indexes.index(of: gameIndex)!)
+            
             //reel 3
             gameIndex = getRandomNonRepeatingGamesIndex(indexies: indexes)
             picker3.selectRow(gameIndex, inComponent: 0, animated: true)
             
             //Increse Count if player loses
+            
             jackpot += betM * 2
             
         default:
@@ -212,7 +227,8 @@ class TropicanaViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         return -1
     }
     
-    //Generate Non Reapitng Fruit sportimages Index from avaliable collection of indexes
+    //Generate Non-repeating Images of sports items Index from avaliable collection of indexes
+    
     func getRandomNonRepeatingGamesIndex(indexies: [Int]) -> Int {
         var randomIndex = -1
         
@@ -224,6 +240,7 @@ class TropicanaViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     }
     
     //increasing
+    
     @IBAction func bet(_ sender: UIButton) {
         betM = 5
         beginningcount = 5
@@ -271,14 +288,14 @@ class TropicanaViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     }
     
     @IBAction func reset(_ sender: UIButton) {
-        // Reset Count
+        // Reset Count - Reset Button
         beginningcount = 0
         jackpot = 100000
         updateUI()
     }
     
     @IBAction func quit(_ sender: UIButton) {
-        // App ShutDown
+        // App ShutDown - Quit Button
         exit(0)
     }
     
